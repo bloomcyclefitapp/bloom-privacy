@@ -50,7 +50,7 @@
 
 <h1>Cycle Sync — Privacy Policy</h1>
 <p class="lede">Datenschutzerklärung · Information under Articles 13 and 14 GDPR</p>
-<p class="updated">Cycle Sync was called Bloom until September 2026 · Last updated: 29 September 2026 · <a href="impressum.html">Impressum / Legal notice</a></p>
+<p class="updated">Cycle Sync was called Bloom until September 2026 · Last updated: 2 October 2026 · <a href="impressum.html">Impressum / Legal notice</a></p>
 
 <div class="summary">
   <h2>The short version</h2>
@@ -179,6 +179,18 @@
     <td>Deleted after 90 days</td>
   </tr>
   <tr>
+    <td>Anonymous setup counters</td>
+    <td>Count how many people reach each setup step, the plan screen and the subscription screen, and how many start a subscription and which one, so we can see where setup loses people</td>
+    <td>Art. 6(1)(f) — legitimate interest</td>
+    <td>Kept as daily totals for 400 days; they contain nothing that relates to a person</td>
+  </tr>
+  <tr>
+    <td>Anonymous answer ratings</td>
+    <td>Count how often the coach's answers are rated helpful or not, by language and by whether the answer changed the plan, so we can see where the coach needs work</td>
+    <td>Art. 6(1)(f) — legitimate interest</td>
+    <td>Kept as daily totals for 400 days; they contain nothing that relates to a person</td>
+  </tr>
+  <tr>
     <td>Selected trusted contact</td>
     <td>Pre-fill a safety message you send yourself</td>
     <td>Art. 6(1)(a) — consent</td>
@@ -194,6 +206,21 @@
   safeguard. You may object under Article 21 GDPR (see section 8).
 </p>
 <p>
+  <strong>Balancing test for the setup counters (Art. 6(1)(f)):</strong> our interest is
+  knowing whether setup works, which we otherwise cannot see. Each count is the name of a
+  screen or step, the app version and the day, added to a total. It carries no identifier, not
+  even the anonymous one used for the coach, and nothing about your cycle, health or training.
+  We cannot tell whose count is whose, and neither could anyone who got hold of the totals.
+</p>
+<p>
+  <strong>Balancing test for the answer ratings (Art. 6(1)(f)):</strong> our interest is
+  knowing whether the coach's answers help, which we otherwise cannot see, because we never see
+  your conversations. A rating is 👍 or 👎, the coach's language, whether the answer changed your
+  plan, the app version and the day, added to a total. It carries no identifier, not even the
+  anonymous one used for the coach, and never the question or the answer. You only send one if
+  you tap a thumb.
+</p>
+<p>
   Providing this data is neither legally nor contractually required. It is necessary to use
   the features described — without cycle data, Cycle Sync cannot adapt your plan — but you are
   free not to provide it and to use the app's free, non-adaptive features.
@@ -206,7 +233,11 @@
   week</strong>, and <strong>the coach you can chat to</strong>. The chat coach is part of Cycle Sync
   Premium. The AI week is built once for everyone during setup, and then weekly if you subscribe.
   Everything else Cycle Sync does — logging your check-ins, tracking your runs, and building and
-  adjusting a plan on the phone itself — involves no network connection at all.
+  adjusting a plan on the phone itself — involves no network connection at all, with one
+  exception that contains nothing about you: while you go through setup, when the subscription
+  screen appears and when you start a subscription, Cycle Sync adds one to an anonymous counter
+  for that step (section 4). The counter is the step's name, the app version and the day. No
+  identifier goes with it.
 </p>
 
 <p>
@@ -324,7 +355,7 @@
   <tr><th>Recipient</th><th>What it receives, and when</th><th>Location</th></tr>
   <tr>
     <td>Supabase</td>
-    <td><strong>Processor.</strong> Hosts the relay that carries the coach request, and the anonymous per-day request counter.</td>
+    <td><strong>Processor.</strong> Hosts the relay that carries the coach request, the anonymous per-day request counter, the anonymous setup counters, and the anonymous answer ratings.</td>
     <td>Database in the EU (AWS Frankfurt, eu-central-1)</td>
   </tr>
   <tr>
@@ -411,7 +442,8 @@
   Cycle Sync stores information on your device solely to deliver the functions you have expressly
   requested. This is strictly necessary within the meaning of § 25(2) no. 2 TDDDG, so no
   separate consent banner is required. We do not use cookies, tracking pixels, SDK analytics
-  or advertising identifiers.
+  or advertising identifiers. The setup counters and answer ratings in section 4 store nothing
+  on your device: Cycle Sync does not keep a note of what it has counted.
 </p>
 
 <h2>8. Your rights</h2>
@@ -420,7 +452,9 @@
     <strong>erasure</strong> (Art. 17), <strong>restriction</strong> (Art. 18) and
     <strong>data portability</strong> (Art. 20).</li>
   <li><strong>Objection (Art. 21)</strong> to processing based on legitimate interest —
-    here, the request counter.</li>
+    here, the request counter, the setup counters and the answer ratings. Because neither the
+    setup counters nor the answer ratings carry an identifier, we cannot find or remove yours
+    after the fact (Art. 11 GDPR).</li>
   <li><strong>Withdraw consent (Art. 7(3))</strong> at any time, with effect for the future.</li>
   <li><strong>Complain to a supervisory authority (Art. 77)</strong> — in Germany, the data
     protection authority of your federal state, or ours: the Berliner Beauftragte für Datenschutz und
